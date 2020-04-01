@@ -1,10 +1,25 @@
 function hitungJumlahKata(kalimat) {
+  // // Cara 1 : menghitung jumlah spasi + 1 = jumlah kata
   var hitungKata = 1;
   for (var i = 0; i < kalimat.length; i++) {
     if (kalimat[i] == ' ') {
       hitungKata++;
     }
   }
+  
+  // // Cara 2 : memisahkan msg2 kata ke dalam array, lalu hitung panjang array
+  // kalimat = kalimat + ' ';
+  // var pisah = [];
+  // var kata = '';
+  // for (var i = 0; i < kalimat.length; i++) {
+  //   if (kalimat[i] !== ' ') {
+  //     kata += kalimat[i];
+  //   } else {
+  //     pisah.push(kata);
+  //     kata = '';
+  //   }
+  // }
+  // var hitungKata = pisah.length;
 
   return hitungKata;
 }
