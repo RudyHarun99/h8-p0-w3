@@ -12,7 +12,7 @@ function cariMean(arr) {
     var strRata = rataArr.toString();
     if (strRata.length > 1) {
       if (strRata[2] > 1 && strRata[2] < 5) {
-        bulatRata = Number(strRata[0]);
+        bulatRata = parseInt(strRata);
       } else if (strRata[2] >= 5 && strRata[2] < 10) {
         bulatRata = Number(strRata[0]) + 1;
       }
