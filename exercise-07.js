@@ -7,20 +7,22 @@ function hitungJumlahKata(kalimat) {
     }
   }
   
-  // // Cara 2 : memisahkan msg2 kata ke dalam array, lalu hitung panjang array
-  // kalimat = kalimat + ' ';
+  // Cara 2 : memisahkan msg2 kata ke dalam array, lalu hitung panjang array
   // var pisah = [];
   // var kata = '';
   // for (var i = 0; i < kalimat.length; i++) {
   //   if (kalimat[i] !== ' ') {
   //     kata += kalimat[i];
+  //     if (i == kalimat.length - 1) {
+  //       pisah.push(kata);
+  //     }
   //   } else {
   //     pisah.push(kata);
   //     kata = '';
   //   }
   // }
   // var hitungKata = pisah.length;
-
+  
   return hitungKata;
 }
   
