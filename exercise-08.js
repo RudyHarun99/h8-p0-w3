@@ -8,20 +8,14 @@ function pasanganTerbesar(num) {
       arrAngka.push(angka);
     }
 
-    // mengurutkan pasangan angka dari yang terbesar
+    // mencari nilai terbesar
     var maxAngka = 0;
-    for (var i = arrAngka.length; i > 0; i--) {
-      for (var j = 0; j < i; j++) {
-        if (arrAngka[j] < arrAngka[j + 1]) {
-          var y = arrAngka[j + 1];
-          arrAngka[j + 1] = arrAngka[j];
-          arrAngka[j] = y;
-        }
+    for (var i = 0; i < arrAngka.length; i++) {
+      if (arrAngka[i] > maxAngka) {
+        maxAngka = arrAngka[i];
       }
     }
-    // mengambil angka yang terbesar berada di index 0
-    maxAngka = arrAngka[0];
-    
+
     return maxAngka;
   }
   
