@@ -7,18 +7,23 @@ function cariMean(arr) {
       jumlahArr += arr[i];
     }
   
+    // mencari nilai rata-rata
     rataArr = jumlahArr / panjangArr;
-    // membulatkan nilai bagi, desimal < 5 ke bawah, desimal >= 5 ke atas
-    var strRata = rataArr.toString();
-    if (strRata.length > 1) {
-      if (strRata[2] > 1 && strRata[2] < 5) {
-        bulatRata = parseInt(strRata);
-      } else if (strRata[2] >= 5 && strRata[2] < 10) {
-        bulatRata = Number(strRata[0]) + 1;
-      }
-    } else {
-      bulatRata = rataArr;
-    }
+
+    // membulatkan nilai rata-rata
+    bulatRata = Math.round(rataArr);
+    
+    // // membulatkan nilai bagi, desimal < 5 ke bawah, desimal >= 5 ke atas
+    // var strRata = rataArr.toString();
+    // if (strRata.length > 1) {
+    //   if (strRata[2] > 1 && strRata[2] < 5) {
+    //     bulatRata = parseInt(strRata);
+    //   } else if (strRata[2] >= 5 && strRata[2] < 10) {
+    //     bulatRata = Number(strRata[0]) + 1;
+    //   }
+    // } else {
+    //   bulatRata = rataArr;
+    // }
   
     return bulatRata;
   }
