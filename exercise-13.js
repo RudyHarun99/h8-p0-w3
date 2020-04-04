@@ -17,16 +17,7 @@ function targetTerdekat(arr) {
     // list selisih jarak dari masing2 karakter O dan X
     for (var i = 0; i < loctO.length; i++) {
       for (var j = 0; j < loctX.length; j++) {
-        var selisih = loctX[j] - loctO[i];
-        var strSelisih = selisih.toString();
-        // menghilangkan nilai selisih yang negatif diganti dengan nilai positif
-        if (strSelisih.length > 1) {
-          if (strSelisih[0] == '-') {
-            selisih = Number(strSelisih[1]);
-          } else {
-            selisih = Number(strSelisih);
-          }
-        }
+        var selisih = Math.abs(loctX[j] - loctO[i]);
         selisihJarak.push(selisih);
       }
     }
